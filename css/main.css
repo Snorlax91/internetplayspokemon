@@ -1779,7 +1779,6 @@ input::-moz-focus-inner {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 	width:100%;
-	margin-top:100px;
 }
 
 .home-sidelinks li, .home-sidelinks-mobile li {
