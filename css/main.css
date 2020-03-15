@@ -1767,6 +1767,7 @@ input::-moz-focus-inner {
 }
 
 .home-sidelinks-mobile{
+	display:none;
 	list-style: none;
 	font-family: "metropolis-regular", sans-serif;
 	font-size: 1.4rem;
@@ -1813,12 +1814,12 @@ input::-moz-focus-inner {
 .home-sidelinks-youtube::before{
   background-color: #dc3545 !important;
 }
-.home-sidelinks a {
+.home-sidelinks a, .home-sidelinks-mobile a {
   display: block;
   padding: 2.1rem 15rem 2.1rem 4rem;
   color: #ffffff;
 }
-.home-sidelinks span {
+.home-sidelinks span, .home-sidelinks-mobile span {
   display: block;
   font-family: "metropolis-regular", sans-serif;
   font-size: 1.5rem;
@@ -1827,7 +1828,7 @@ input::-moz-focus-inner {
   text-transform: none;
   letter-spacing: 0;
 }
-.home-sidelinks li:hover {
+.home-sidelinks li:hover, .home-sidelinks-mobile li:hover{
   background-color: rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -2023,7 +2024,7 @@ html.no-csstransitions .home-content__main {
     padding-top: 18rem;
   }
 
-  .home-sidelinks {
+  .home-sidelinks, .home-sindelinks-mobile {
     font-size: 1.3rem;
   }
 
@@ -2059,7 +2060,7 @@ html.no-csstransitions .home-content__main {
     max-width: 1000px;
   }
 
-  .home-sidelinks a {
+  .home-sidelinks a, .home-sindelinks-mobile a {
     padding: 2.1rem 12rem 2.1rem 4rem;
   }
 }
@@ -2084,7 +2085,7 @@ html.no-csstransitions .home-content__main {
     max-width: 850px;
   }
 
-  .home-sidelinks a {
+  .home-sidelinks a, .home-sindelinks-mobile {
     padding: 1.8rem 6rem 1.8rem 4rem;
   }
 }
@@ -2096,6 +2097,9 @@ html.no-csstransitions .home-content__main {
 
   .home-sidelinks {
     display: none;
+  }
+  .home-sindelinks-mobile{
+	display: block;
   }
 }
 @media only screen and (max-width: 900px) {
