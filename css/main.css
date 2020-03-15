@@ -1765,7 +1765,22 @@ input::-moz-focus-inner {
   top: 50%;
   right: 0;
 }
-.home-sidelinks li {
+
+.home-sidelinks-mobile{
+	list-style: none;
+	font-family: "metropolis-regular", sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.714;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	margin: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width:100%;
+}
+
+.home-sidelinks li, .home-sidelinks-mobile li {
   display: block;
   padding: 0;
   text-align: left;
@@ -1775,10 +1790,10 @@ input::-moz-focus-inner {
   transition: all 0.5s ease-in-out;
   position: relative;
 }
-.home-sidelinks li:last-child {
+.home-sidelinks li:last-child, .home-sidelinks-mobile li:last-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
-.home-sidelinks li::before {
+.home-sidelinks li::before, .home-sidelinks-mobile li::before {
   content: "";
   display: block;
   height: 6px;
